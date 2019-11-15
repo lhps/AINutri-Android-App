@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="339dp"
+        android:layout_height="432dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="-75dp"
+        app:srcCompat="@drawable/logo_tcc" />
+
+    <TextView
+        android:id="@+id/infoSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="116dp"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/rounded_button_blue"
+        android:outlineAmbientShadowColor="#000"
+        android:outlineSpotShadowColor="#000"
+        android:shadowColor="#000"
+        android:shadowDx="1000"
+        android:shadowDy="1000"
+        android:shadowRadius="100"
+        android:text="Entrar"
+        android:textColor="@color/btnTxtEntrarColor"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/rounded_button_white"
+        android:outlineAmbientShadowColor="#000"
+        android:outlineSpotShadowColor="#000"
+        android:shadowColor="#000"
+        android:shadowDx="1000"
+        android:shadowDy="1000"
+        android:shadowRadius="100"
+        android:text="Cadastrar"
+        android:textColor="@color/btnTxtCadastrarColor"
+        android:textSize="25sp" />
+
+</RelativeLayout>

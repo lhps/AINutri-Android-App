@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="btnEntrarColor">#2d95d7</color>
+    <color name="actionBar">#2d95d7</color>
+    <color name="btnCadastrarColor">#fff</color>
+    <color name="btnTxtEntrarColor">#fff</color>
+    <color name="txtForm">#fff</color>
+    <color name="btnTxtCadastrarColor">#2d95d7</color>
+
+
+</resources>

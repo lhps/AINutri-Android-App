@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".FormularioActivity"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvFormulario"
+            android:layout_width="205dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="4dp"
+            android:text="Formulário"
+            android:textSize="30sp"
+            android:textColor="@color/btnTxtEntrarColor"/>
+
+        <TextView
+            android:id="@+id/tvDadosAntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="50dp"
+            android:text="Dados Antropométricos"
+            android:textColor="@color/btnTxtEntrarColor"
+            android:textSize="30sp" />
+
+
+        <EditText
+            android:id="@+id/etIdade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Idade"
+            android:inputType="number"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+
+        <EditText
+            android:id="@+id/etPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Peso (em Kg)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+        <EditText
+            android:id="@+id/etAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Altura (em Cm)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etCircunBraco"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Circunferência do braço (em Cm)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etCircuCin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Circunferência da cintura (em Cm)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etDiamAbdom"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Diâmetro abdominal (em Cm)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+
+        <TextView
+            android:id="@+id/tvDadosPes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="50dp"
+            android:text="Dados Pessoais"
+            android:textColor="@color/btnTxtEntrarColor"
+            android:textSize="30sp" />
+
+
+        <EditText
+            android:id="@+id/etGrauEscola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Grau de escolaridade"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+        <EditText
+            android:id="@+id/etQtdPessoas"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Qtd. pessoas em sua casa"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etRendFamiliar"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Rendimento familiar total"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+        <TextView
+            android:id="@+id/tvDadosNutri"
+            android:layout_width="205dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="4dp"
+            android:text="Nutrientes"
+            android:textSize="30sp"
+            android:textColor="@color/btnTxtEntrarColor"/>
+
+        <EditText
+            android:id="@+id/etCalorias"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Calorias"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etProtein"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Proteínas"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etCarbo"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Carboidratos"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etAcucar"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Açucar total"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etFibras"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Fibras"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+        <TextView
+            android:id="@+id/tvGorduras"
+            android:layout_width="205dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="4dp"
+            android:text="Gorduras"
+            android:textSize="30sp"
+            android:textColor="@color/btnTxtEntrarColor"/>
+
+        <EditText
+            android:id="@+id/etGorduraSat"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Gorduras Saturada"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etGorduraMono"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Gordura Monosaturada"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+        <EditText
+            android:id="@+id/etGorduraPoli"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Gordura Poliinsaturada"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+        <EditText
+        android:id="@+id/etColesterol"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Colesterol"
+        android:inputType="textPersonName"
+        android:textColor="@color/txtForm"
+        android:textColorHint="@color/txtForm"/>
+
+        <EditText
+            android:id="@+id/etAlcool"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Alcool"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eu concordo com os termos"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagnosticar"
+            android:background="@drawable/rounded_button_blue"
+            android:outlineAmbientShadowColor="#000"
+            android:outlineSpotShadowColor="#000"
+            android:shadowColor="#000"
+            android:shadowDx="1000"
+            android:shadowDy="1000"
+            android:shadowRadius="100"
+            android:textColor="@color/btnTxtEntrarColor"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
