@@ -14,8 +14,8 @@ public interface FlaskApi {
     @GET("posts")
     Call<List<Post>> getPosts();
 
-    @POST("auth/register")
-    Call<User> createUser(@Body User user);
+   // @POST("auth/register")
+   // Call<User> createUser(@Body User user);
 
     @FormUrlEncoded
     @POST("auth/register")
