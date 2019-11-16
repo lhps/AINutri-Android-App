@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="8dp"
+tools:context=".FormPessoalActivity"
+android:background="@drawable/gradient_background">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tvDadosPes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:text="Dados Pessoais"
+        android:textColor="@color/btnTxtEntrarColor"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/etGrauEscola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Grau de escolaridade"
+        android:inputType="textPersonName"
+        android:textColor="@color/txtForm"
+        android:textColorHint="@color/txtForm"/>
+
+    <EditText
+        android:id="@+id/etQtdPessoas"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Qtd. pessoas em sua casa"
+        android:inputType="textPersonName"
+        android:textColor="@color/txtForm"
+        android:textColorHint="@color/txtForm"/>
+    <EditText
+        android:id="@+id/etRendFamiliar"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Rendimento familiar total"
+        android:inputType="numberDecimal"
+        android:textColor="@color/txtForm"
+        android:textColorHint="@color/txtForm"/>
+
+
+
+    <Button
+        android:id="@+id/btnProx2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Próxima paǵina"
+        android:background="@drawable/rounded_button_blue"
+        android:outlineAmbientShadowColor="#000"
+        android:outlineSpotShadowColor="#000"
+        android:shadowColor="#000"
+        android:shadowDx="1000"
+        android:shadowDy="1000"
+        android:shadowRadius="100"
+        android:textColor="@color/btnTxtEntrarColor"
+        android:textSize="15sp"/>
+
+
+</LinearLayout>
+
+
+</ScrollView>
