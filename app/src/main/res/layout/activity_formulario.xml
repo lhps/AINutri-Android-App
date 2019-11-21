@@ -106,17 +106,29 @@
             android:textColor="@color/txtForm"
             android:textColorHint="@color/txtForm"/>
 
-
-
-
-
-
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/etForcaPunho"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Eu concordo com os termos"
-            />
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Força do Punho"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+        <EditText
+            android:id="@+id/etBatimentosCardiacos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Batimentos Cardiacos"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
 
         <Button
             android:id="@+id/btnProx1"
@@ -124,6 +136,7 @@
             android:layout_height="wrap_content"
             android:text="Pŕoxima Página"
             android:background="@drawable/rounded_button_blue"
+            android:layout_marginTop="15dp"
             android:outlineAmbientShadowColor="#000"
             android:outlineSpotShadowColor="#000"
             android:shadowColor="#000"

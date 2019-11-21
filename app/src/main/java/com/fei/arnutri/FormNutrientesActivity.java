@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class FormNutrientesActivity extends AppCompatActivity {
     private Button btnProx;
@@ -15,13 +16,12 @@ public class FormNutrientesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_nutrientes);
 
-        btnProx = findViewById(R.id.btnProx3);
+        btnProx = findViewById(R.id.btnDiagnosticar);
 
         btnProx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FormNutrientesActivity.this, FormGordurasActivity.class);
-                startActivity(intent);
+
             }
         });
     }
