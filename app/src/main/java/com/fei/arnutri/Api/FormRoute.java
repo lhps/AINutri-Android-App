@@ -19,6 +19,7 @@ public interface FormRoute {
             @Field("height") String height,
             @Field("armCircunference") String armCircunference,
             @Field("waistCircunference") String waistCircunference,
-            @Field("sagittalAbdominalDiameter") String sagittalAbdominalDiameter,
+            @Field("sagittalAbdominalDiameter") String sagittalAbdominalDiameter);
+
 
 }

@@ -58,5 +58,5 @@ public class FormularioActivity extends AppCompatActivity {
     }
 
 
-    private void sendData()
+    //private void sendData()
 }

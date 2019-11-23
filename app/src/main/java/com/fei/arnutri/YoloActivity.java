@@ -48,7 +48,7 @@ public class YoloActivity extends AppCompatActivity implements CameraBridgeViewB
 
 
 
-    public void Canny(View Button){
+    public void Yolo(View Button){
 
         if(startYolo == false) {
 
@@ -59,7 +59,7 @@ public class YoloActivity extends AppCompatActivity implements CameraBridgeViewB
                 firstTimeYolo = true;
                 Context context = getApplicationContext();
                 String tinyYoloCfg = context.getExternalFilesDir(null) + "/dnns/yolo-obj.cfg";
-                String tinyYoloWeights = context.getExternalFilesDir(null) + "/dnns/yolo-obj_5000.weights";
+                String tinyYoloWeights = context.getExternalFilesDir(null) + "/dnns/yolo-obj_22000.weights";
 
                 //String tinyYoloCfg = Environment.getExternalStorageDirectory() + "/dnns/yolo-obj.cfg";
                 //String tinyYoloWeights = Environment.getExternalStorageDirectory() + "/dnns/yolo-obj_5000.weights";
@@ -211,13 +211,48 @@ public class YoloActivity extends AppCompatActivity implements CameraBridgeViewB
                     int intConf = (int) (conf * 100);
 
 
-                    List<String> cocoNames = Arrays.asList("aveia","arroz_integral","feijao");
 
-                    Imgproc.putText(frame, cocoNames.get(idGuy)+" " + intConf+"%(Certeza)",box.tl(),Core.FONT_HERSHEY_SIMPLEX, 2,new Scalar(0,255,0), 2);
-                    //(255, 178, 50)
-                    Imgproc.rectangle(frame,box.tl(), box.br(), new Scalar(0,255,0),2);
-                    System.out.println(box);
+                    List<String> cocoNames = Arrays.asList("aveia","arroz_integral","feijao","ruffles","twix", "refrigerante_lata","bombom_ourobranco", "suco_laranja", "lays_churrasco","leite", "macarrao_integral");
 
+                    List<String> badFoods = Arrays.asList("ruffles", "twix", "refrigerante_lata","bombom_ourobranco","lays_churrasco");
+
+                    if(badFoods.contains(cocoNames.get(idGuy)) ){
+                        Imgproc.putText(frame, cocoNames.get(idGuy)+" NAO COMPRE ",box.tl(),Core.FONT_HERSHEY_SIMPLEX, 2,new Scalar(255,0,0), 2);
+                        //(255, 178, 50)
+                        Imgproc.rectangle(frame,box.tl(), box.br(), new Scalar(255,0,0),2);
+
+
+                        System.out.println(box);
+                    }
+                    else{
+                        Imgproc.putText(frame, cocoNames.get(idGuy)+" " + intConf+"%(Certeza)",box.tl(),Core.FONT_HERSHEY_SIMPLEX, 2,new Scalar(0,255,0), 2);
+                        //(255, 178, 50)
+                        Imgproc.rectangle(frame,box.tl(), box.br(), new Scalar(0,255,0),2);
+
+
+                        System.out.println(box);
+                    }
+
+
+
+                    /*
+                    if(cocoNames.contains(cocoNames.get(idGuy))){
+                        Imgproc.putText(frame, "Não compre",box.tl(),Core.FONT_HERSHEY_SIMPLEX, 2,new Scalar(255,0,0), 2);
+                        Imgproc.rectangle(frame,box.tl(), box.br(), new Scalar(255,0,0),2);
+
+
+                        System.out.println(box);
+                    }
+                    else{
+                        Imgproc.putText(frame, cocoNames.get(idGuy)+" " + intConf+"%(Certeza)",box.tl(),Core.FONT_HERSHEY_SIMPLEX, 2,new Scalar(0,255,0), 2);
+                        //(255, 178, 50)
+                        Imgproc.rectangle(frame,box.tl(), box.br(), new Scalar(0,255,0),2);
+
+
+                        System.out.println(box);
+                    }
+
+*/
                 }
             }
 
