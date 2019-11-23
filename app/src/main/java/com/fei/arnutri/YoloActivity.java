@@ -215,7 +215,7 @@ public class YoloActivity extends AppCompatActivity implements CameraBridgeViewB
 
                     Imgproc.putText(frame, cocoNames.get(idGuy)+" " + intConf+"%(Certeza)",box.tl(),Core.FONT_HERSHEY_SIMPLEX, 2,new Scalar(0,255,0), 2);
                     //(255, 178, 50)
-                    Imgproc.rectangle(frame,box.tl(), box.br(), new Scalar(255,0,0),2);
+                    Imgproc.rectangle(frame,box.tl(), box.br(), new Scalar(0,255,0),2);
                     System.out.println(box);
 
                 }
