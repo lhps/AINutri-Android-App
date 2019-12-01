@@ -18,6 +18,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.net.CookieHandler;
+import java.net.CookieManager;
+import java.net.CookiePolicy;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
 
+        //CookieHandler.setDefault(new CookieManager(new SessionCookieStore(this), CookiePolicy.ACCEPT_ALL));
 
         login = findViewById(R.id.btnEntrar);
         etUsername = findViewById(R.id.username);
@@ -74,20 +78,7 @@ public class LoginActivity extends AppCompatActivity {
     public void loginUser(String email, String password) {
 
 
-        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-        OkHttpClient client = new OkHttpClient.Builder()
-                .addInterceptor(interceptor)
-                .build();
-
-        if (retrofit == null) {
-            Log.d("INFO", "CREATING RETROFIT");
-
-            retrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-        }
+        Retrofit retrofit = RetrofitClient.getInstance();
 
         AuthRoute api = retrofit.create(AuthRoute.class);
 
@@ -100,6 +91,16 @@ public class LoginActivity extends AppCompatActivity {
                 try {
 
                     String body = response.body().string();
+
+                    List<String> cookies = response.headers().values("Set-Cookie");
+
+                    //System.out.println(cookies.get(0));
+
+
+
+                    if(body == null){
+                        return;
+                    }
 
                     try {
                         JSONObject json = new JSONObject(body);

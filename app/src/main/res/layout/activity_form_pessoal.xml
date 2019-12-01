@@ -26,9 +26,42 @@ android:background="@drawable/gradient_background">
         android:textColor="@color/btnTxtEntrarColor"
         android:textSize="30sp" />
 
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:text="Seu gênero"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerGenderPessoal"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:textColor="#fff" />
 
     <EditText
-        android:id="@+id/etGrauEscola"
+        android:id="@+id/etIdade"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="numberDecimal"
+        android:textColor="@color/txtForm"
+        android:textColorHint="@color/txtForm"/>
+
+
+    <EditText
+        android:id="@+id/etGrauEscolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -47,9 +80,10 @@ android:background="@drawable/gradient_background">
         android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="Qtd. pessoas em sua casa"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:textColor="@color/txtForm"
         android:textColorHint="@color/txtForm"/>
+
     <EditText
         android:id="@+id/etRendFamiliar"
         android:layout_width="243dp"
@@ -61,7 +95,6 @@ android:background="@drawable/gradient_background">
         android:inputType="numberDecimal"
         android:textColor="@color/txtForm"
         android:textColorHint="@color/txtForm"/>
-
 
 
     <Button
