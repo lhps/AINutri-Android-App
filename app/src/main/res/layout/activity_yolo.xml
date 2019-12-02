@@ -23,7 +23,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="88dp"
         android:background="@drawable/rounded_button_blue"
-        android:onClick="Canny"
+        android:onClick="Yolo"
         android:outlineAmbientShadowColor="#000"
         android:outlineSpotShadowColor="#000"
         android:shadowColor="#000"

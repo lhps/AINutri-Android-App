@@ -20,6 +20,7 @@ public interface FormRoute {
             @Field("height") String height,
             @Field("armCircunference") String armCircunference,
             @Field("waistCircunference") String waistCircunference,
+<<<<<<< HEAD
             @Field("sagittalAbdominalDiameter") String sagittalAbdominalDiameter,
             @Field("fistStrength") String fistStrength,
             @Field("heartBeats") String heartBeats,
@@ -54,6 +55,10 @@ public interface FormRoute {
             @Field("cholesterol") String cholesterol,
             @Field("alcohol") String alcohol
     );
+=======
+            @Field("sagittalAbdominalDiameter") String sagittalAbdominalDiameter);
+
+>>>>>>> pinho_dev
 
     @FormUrlEncoded
     @POST("/diagnostic/makeDiagnostic")
