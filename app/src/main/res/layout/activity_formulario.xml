@@ -37,19 +37,6 @@
 
 
         <EditText
-            android:id="@+id/etIdade"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="50dp"
-            android:ems="10"
-            android:hint="Idade"
-            android:inputType="number"
-            android:textColor="@color/txtForm"
-            android:textColorHint="@color/txtForm"/>
-
-
-        <EditText
             android:id="@+id/etPeso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -126,6 +113,43 @@
             android:layout_marginLeft="50dp"
             android:ems="10"
             android:hint="Batimentos Cardiacos"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+        <EditText
+            android:id="@+id/etPressaoSistolica"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Pressão (Sistólica)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+        <EditText
+            android:id="@+id/etPressaoDiastolica"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="Pressão (Diastólica)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/txtForm"
+            android:textColorHint="@color/txtForm"/>
+
+
+        <EditText
+            android:id="@+id/etImc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="IMC"
             android:inputType="numberDecimal"
             android:textColor="@color/txtForm"
             android:textColorHint="@color/txtForm"/>

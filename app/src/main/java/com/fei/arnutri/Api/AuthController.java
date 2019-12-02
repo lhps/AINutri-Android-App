@@ -17,6 +17,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.List;
 
 import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
@@ -130,6 +131,9 @@ public  class AuthController extends AppCompatActivity  {
                 try {
 
                     String body = response.body().string();
+                    List<String> cookies = response.headers().values("Set-Cookie");
+
+                    System.out.println(cookies);
 
                     try {
                         JSONObject json = new JSONObject(body);
