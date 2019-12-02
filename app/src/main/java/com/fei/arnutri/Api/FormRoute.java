@@ -1,5 +1,6 @@
 package com.fei.arnutri.Api;
 
+import okhttp3.Response;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -54,4 +55,7 @@ public interface FormRoute {
             @Field("alcohol") String alcohol
     );
 
+    @FormUrlEncoded
+    @POST("/diagnostic/makeDiagnostic")
+    Call<ResponseBody> makeDiagnostic();
 }

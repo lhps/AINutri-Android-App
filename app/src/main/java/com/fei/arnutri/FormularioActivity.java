@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.fei.arnutri.Api.AuthRoute;
 import com.fei.arnutri.Api.Consts;
@@ -150,6 +151,8 @@ private void sendData(
             diastolicPressure
     );
 
+    final Call<ResponseBody> diagnosticCall = api.makeDiagnostic();
+
 
     call.enqueue(new Callback<ResponseBody>() {
         @Override
@@ -167,8 +170,19 @@ private void sendData(
                     String success = json.getString("success");
 
                     if (success.equals("true")) {
-                        Intent intent = new Intent(FormularioActivity.this, FormPessoalActivity.class);
-                        startActivity(intent);
+                        // Calls diagnostic method
+                        diagnosticCall.enqueue(new Callback<ResponseBody>() {
+                            @Override
+                            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                                Intent intent = new Intent(FormularioActivity.this, FormPessoalActivity.class);
+                                startActivity(intent);
+                            }
+
+                            @Override
+                            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                            }
+                        });
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
