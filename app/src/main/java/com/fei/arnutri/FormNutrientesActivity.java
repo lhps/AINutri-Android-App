@@ -126,6 +126,7 @@ public class FormNutrientesActivity extends AppCompatActivity {
         );
 
 
+
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
@@ -139,7 +140,7 @@ public class FormNutrientesActivity extends AppCompatActivity {
                     try {
                         String errorBody = response.errorBody().string();
                         Log.d("ERROR LOG", errorBody);
-                        Toast.makeText(getApplicationContext(), "Error while submting form", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Error while submitting form", Toast.LENGTH_SHORT).show();
                     }
                     catch (IOException e){
                         e.printStackTrace();
